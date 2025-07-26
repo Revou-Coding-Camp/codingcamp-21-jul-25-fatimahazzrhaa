@@ -36,6 +36,11 @@ function toggleFilter() {
 
 }
 
+function completeTask(index){
+    tasks[index].completed = true;
+}
+
+
 function renderTasks() {
     const taskList = document.getElementById("todo-list");
     taskList.innerHTML = "";
